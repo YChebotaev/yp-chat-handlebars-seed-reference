@@ -1,0 +1,16 @@
+{
+  "name": "yp-chat",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "parcel build src/pages/**/*.hbs",
+    "postinstall": "npx patch-package"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@andreyvolokitin/parcel-transformer-handlebars": "^0.0.3",
+    "parcel": "^2.2.1"
+  }
+}

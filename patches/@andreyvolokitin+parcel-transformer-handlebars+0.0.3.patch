@@ -1,0 +1,19 @@
+diff --git a/node_modules/@andreyvolokitin/parcel-transformer-handlebars/index.js b/node_modules/@andreyvolokitin/parcel-transformer-handlebars/index.js
+index 05231ea..378e014 100644
+--- a/node_modules/@andreyvolokitin/parcel-transformer-handlebars/index.js
++++ b/node_modules/@andreyvolokitin/parcel-transformer-handlebars/index.js
+@@ -15,11 +15,13 @@ const transformer = new Transformer({
+     const contents = {};
+ 
+     if (conf) {
+-      config.shouldInvalidateOnStartup();
++      // config.shouldInvalidateOnStartup();
+       Object.assign(contents, conf.contents);
+     }
+ 
+     config.setResult(contents);
++
++    return config
+   },
+ 
+   async transform({asset, config, options, resolve}) {
